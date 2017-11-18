@@ -1,1 +1,136 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+ /* *********** NAVBAR *************/
+
+ .navbar-brand{
+   color: #43B3C5!important;
+ }
+
+ .main-container{
+   margin-top: 15px;
+ }
+ .row > div{
+   padding: 0;
+   margin: 0;
+ }
+.row{
+   margin: 0;
+}
+ .white{
+   color: white;
+ }
+
+ /* ********* HOME **************/
+
+ .jumbotron{
+   opacity: 0.8!important;
+ }
+
+ .cartelera{
+   border-bottom: 2px solid #D6D4D2;
+   margin-bottom: 15px;
+   color: #D6D4D2;
+ }
+ .big-img{
+   width: 100%;
+   height: 300px;
+   background-size: cover;
+   position: relative;
+
+ }
+ .small-img{
+   width: 100%;
+   height: 200px;
+   background-size: cover;
+   position: relative;
+ }
+.big-img:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+.small-img:hover
+{
+  opacity: 0.9;
+  cursor: pointer;
+}
+ .desc-peli{
+   position: absolute;
+   bottom: 10px;
+   left: 10px;
+ }
+.desc-peli > .img-desc-peli{
+   width: 65px;
+   height: 90px;
+   background-size: cover;
+ }
+ .img-desc-peli{
+    opacity: 0.7;
+ }
+
+
+/* ************* BUSQUEDA INFO ***************/
+
+ .info-p{
+   font-size: 1.4em;
+   vertical-align: middle;
+ }
+
+ .container-info{
+   background-color: #E0E0E0;
+   padding: 30px 30px;
+ }
+
+ /* **************** PELICULA *********************/
+
+ .fondo-peli{
+   background-color: #E0E0E0;
+   padding: 20px;
+   position: relative;
+ }
+ .img-peli{
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 500px;
+   opacity: 1;
+   margin-right: 20px;
+ }
+
+ .txt-peli{
+   padding-left: 15px!important;
+ }
+
+ .right{
+   float: right;
+ }
+
+ /*   ANIMACIONES   */
+ .animated {
+   -webkit-animation-duration: 1s;
+   animation-duration: 1s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+ }
+
+ .fast {
+   -webkit-animation-duration: 0.4s;
+   animation-duration: 0.4s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+ }
+
+ @keyframes fadeIn {
+   from {
+     opacity: 0;
+   }
+
+   to {
+     opacity: 1;
+   }
+ }
+
+ .fadeIn {
+   animation-name: fadeIn;
+ }

@@ -1,0 +1,60 @@
+<div class="row cartelera" style="margin-top: 50px;">
+  <h2>{{ titulo }}</h2>
+</div>
+
+<div class="row" *ngIf="peliculas">
+
+  <div class="col-sm-6">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row big-img" [ngStyle]="{'background-image': 'url('+(peliculas[0] | imagenpelicula)+')'}" [routerLink]="['/pelicula', peliculas[0].id, 'home', {details: clase} ]">
+          <span>
+            <div class="desc-peli">
+              <div class="img-desc-peli" [ngStyle]="{'background-image': 'url('+(peliculas[0] | imagenpelicula:true)+')'}"></div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="row small-img" [ngStyle]="{'background-image': 'url('+(peliculas[1] | imagenpelicula)+')'}" [routerLink]="['/pelicula', peliculas[1].id, 'home', {details: clase} ]">
+
+        </div>
+      </div>
+    <div class="col-sm-6">
+        <div class="row small-img" [ngStyle]="{'background-image': 'url('+(peliculas[2] | imagenpelicula)+')'}" [routerLink]="['/pelicula', peliculas[2].id, 'home', {details: clase} ]">
+
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-6">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="row small-img" [ngStyle]="{'background-image': 'url('+(peliculas[3] | imagenpelicula)+')'}" [routerLink]="['/pelicula', peliculas[3].id, 'home', {details: clase} ]">
+
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="row small-img" [ngStyle]="{'background-image': 'url('+(peliculas[4] | imagenpelicula)+')'}" [routerLink]="['/pelicula', peliculas[4].id, 'home', {details: clase} ]">
+
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row big-img" [ngStyle]="{'background-image': 'url('+(peliculas[5] | imagenpelicula)+')'}" [routerLink]="['/pelicula', peliculas[5].id, 'home', {details: clase} ]">
+        <span>
+          <div class="desc-peli">
+            <div class="img-desc-peli" [ngStyle]="{'background-image': 'url('+(peliculas[5] | imagenpelicula:true)+')'}"></div>
+
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>

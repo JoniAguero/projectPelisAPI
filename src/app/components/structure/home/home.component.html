@@ -1,0 +1,18 @@
+
+<div class="main-container">
+
+  <div class="container-fluid">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container animated fadeIn fast">
+        <h1 class="display-3">PelisGuía</h1>
+        <p class="lead">¡Toda la información de tus Películas y Series favoritas está acá!</p>
+      </div>
+    </div>
+
+    <div class="container animated fadeIn">
+      <app-galeria [peliculas]="peliculasCartelera" titulo="Películas en Cartelera" clase="pelicula"></app-galeria>
+      <app-galeria [peliculas]="peliculasPopulares" titulo="Películas Populares" clase="pelicula"></app-galeria>
+      <app-galeria [peliculas]="seriesPopulares" titulo="Series Populares" clase="serie"></app-galeria>
+    </div>
+
+</div>

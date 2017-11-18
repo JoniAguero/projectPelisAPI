@@ -1,0 +1,22 @@
+<div class="main-container">
+  <div class="container">
+    <div class="row" *ngIf="buscar">
+      <div class="row" *ngIf="buscar">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        <div class="card-columns">
+          <div class="card animated fadeIn" *ngFor="let pelicula of _peliculasService.peliculas[2] | paginate: { itemsPerPage: 20, currentPage: p }">
+            <img class="card-img-top" [src]="pelicula|imagenpelicula" [alt]="pelicula.original_title">
+            <div class="card-body">
+              <h4 class="card-title">{{pelicula.original_title}}</h4>
+              <p class="card-text text-justify">{{pelicula.overview|slice:0:250}}...</p>
+              <a [routerLink]="['/pelicula', pelicula.id, 'buscar', buscar]" class="btn btn-primary btn-block">Ver más...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container container-info" *ngIf="!buscar">
+      <p class="info-p">No existen busquedas pendientes..</p>
+    </div>
+  </div>
+</div>
