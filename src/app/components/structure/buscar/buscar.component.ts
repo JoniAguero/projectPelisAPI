@@ -13,7 +13,7 @@ export class BuscarComponent implements OnInit {
   peliculas:any[] = [];
 
   constructor(private activatedRoute:ActivatedRoute,
-              private _peliculasService:PeliculasService) {
+              public _peliculasService:PeliculasService) {
 
                 this.activatedRoute.params.subscribe( parametros => {
                   if ( parametros['texto']){

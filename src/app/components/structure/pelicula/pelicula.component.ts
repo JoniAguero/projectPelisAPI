@@ -9,7 +9,7 @@ import { PeliculasService } from '../../../services/peliculas.service';
 })
 export class PeliculaComponent implements OnInit {
 
-  private pelicula:any;
+  public pelicula:any;
   private pagina:any;
   private busqueda:any;
 

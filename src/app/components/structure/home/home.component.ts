@@ -8,13 +8,13 @@ import { PeliculasService } from '../../../services/peliculas.service';
 })
 export class HomeComponent implements OnInit {
 
-  private peliculasPopulares:any[] = [];
-  private peliculasCartelera:any[] = [];
+  public peliculasPopulares:any[] = [];
+  public peliculasCartelera:any[] = [];
 
-  private seriesPopulares:any[] = [];
+  public seriesPopulares:any[] = [];
 
 
-  constructor(private _peliculasService:PeliculasService) { }
+  constructor(public _peliculasService:PeliculasService) { }
 
   ngOnInit() {
     this._peliculasService.getPeliculasPopulares()
